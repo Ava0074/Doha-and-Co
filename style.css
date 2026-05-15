@@ -6,8 +6,8 @@
 }
 
 body {
-  background: #0b0b0b;
-  color: white;
+  background: linear-gradient(135deg, #ffd6e7, #cfe8ff);
+  color: #222;
 }
 
 /* HEADER */
@@ -16,20 +16,23 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #111;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
 }
 
 .logo {
   font-size: 20px;
   font-weight: bold;
-  letter-spacing: 2px;
+  color: #ff4fa3;
 }
 
 .nav a {
-  color: white;
-  text-decoration: none;
   margin-left: 20px;
-  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 /* HERO */
@@ -40,37 +43,45 @@ body {
   align-items: center;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #111, #000);
 }
 
 .hero h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 48px;
+  color: #ff4fa3;
 }
 
 .hero p {
-  color: #bbb;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #3a6ea5;
 }
 
 .btn {
+  display: inline-block;
+  margin-top: 20px;
   padding: 12px 25px;
-  background: white;
-  color: black;
+  background: #ff4fa3;
+  color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 30px;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
   padding: 60px 20px;
   text-align: center;
 }
 
 .section h2 {
-  margin-bottom: 40px;
   font-size: 30px;
+  margin-bottom: 30px;
+  color: #3a6ea5;
+}
+
+.text {
+  max-width: 600px;
+  margin: auto;
+  color: #444;
+  line-height: 1.6;
 }
 
 /* GRID */
@@ -83,26 +94,26 @@ body {
 }
 
 .card {
-  background: #1a1a1a;
-  padding: 30px;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
   padding: 20px;
-  background: #111;
+  background: rgba(255,255,255,0.6);
   margin-top: 40px;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media (max-width: 768px) {
 
   .header {
     flex-direction: column;
     gap: 10px;
-    text-align: center;
   }
 
   .nav {
@@ -112,7 +123,7 @@ body {
   }
 
   .hero h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .grid {
